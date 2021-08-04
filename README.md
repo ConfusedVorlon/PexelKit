@@ -3,11 +3,11 @@
 A simple Swift wrapper to access Pexels.
 Optimised for 'infinite scrolling' type displays
 
-##Installation
+## Installation
 
 Use SPM
 
-##Usage
+## Usage
 
 Configure the client with your API, then use the shared singleton
 
