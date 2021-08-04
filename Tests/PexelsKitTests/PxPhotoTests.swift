@@ -45,7 +45,7 @@ final class PxPhotoTests: XCTestCase {
         XCTAssertEqual(photo.id, 2014422)
         XCTAssertEqual(photo.width, 3024)
         XCTAssertEqual(photo.height, 3025)
-        XCTAssertEqual(photo.url, URL(string:"https://www.pexels.com/photo/brown-rocks-during-golden-hour-2014422/")!)
+        XCTAssertEqual(photo.photoPage, URL(string:"https://www.pexels.com/photo/brown-rocks-during-golden-hour-2014422/")!)
         XCTAssertEqual(photo.photographer, "Joey Farina")
         XCTAssertEqual(photo.photographerUrl, URL(string:"https://www.pexels.com/@joey")!)
         XCTAssertEqual(photo.photographerId, 680589)
