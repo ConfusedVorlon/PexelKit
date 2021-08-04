@@ -15,7 +15,6 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.4.3"),
-        .package(url: "https://github.com/JohnSundell/Codextended.git", from: "0.3.0"),
         .package(url: "https://github.com/ConfusedVorlon/HSHelpers.git", from: "0.3.0")
     ],
     targets: [
@@ -26,6 +25,6 @@ let package = Package(
             dependencies: ["Alamofire","HSHelpers"]),
         .testTarget(
             name: "PexelsKitTests",
-            dependencies: ["PexelsKit","Codextended","HSHelpers","Alamofire"]),
+            dependencies: ["PexelsKit","HSHelpers","Alamofire"]),
     ]
 )

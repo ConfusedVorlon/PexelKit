@@ -6,7 +6,6 @@
 //
 
 import XCTest
-import Codextended
 import Foundation
 
 @testable import PexelsKit
@@ -40,7 +39,8 @@ final class PxPhotoTests: XCTestCase {
             """
         let data = string.data(using: .utf8)!
         
-        let photo = try! data.decoded() as PxPhoto
+        let decoder = JSONDecoder()
+        let photo = try! decoder.decode(PxPhoto.self, from: data)
         
         XCTAssertEqual(photo.id, 2014422)
         XCTAssertEqual(photo.width, 3024)
