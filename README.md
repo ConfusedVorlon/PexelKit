@@ -9,7 +9,14 @@ Use SPM
 
 ## Usage
 
-Configure the client with your API, then use the shared singleton
+Configure the client with your API, 
+
+	let config = PxClient.Config(auth:PexelsKeys.accessKey)
+	PxClient.setup(config)
+	let client = PxClient.shared
+
+then use the shared singleton
+
 
 	search = client.fetch(searchTerm: searchTerm) {
 	    [weak self](result) in
