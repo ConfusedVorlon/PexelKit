@@ -11,7 +11,7 @@ Use SPM
 
 Configure the client with your API, 
 
-	let config = PxClient.Config(auth:PexelsKeys.accessKey)
+	let config = PxClient.Config(auth:YOUR_ACCESS_KEY)
 	PxClient.setup(config)
 	let client = PxClient.shared
 

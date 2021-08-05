@@ -53,6 +53,8 @@ public class PxSearch {
                 switch response.result {
                 case .failure(let error):
                     if let string = response.data?.utf8String {
+                        print("Pexel failure for : \(url)")
+                        print("Response:")
                         print(string)
                     }
                     self?.completion(PxResult.failure(error))
